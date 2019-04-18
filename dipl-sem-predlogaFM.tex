@@ -336,6 +336,24 @@ Očitno se da te izračune opraviti tudi na več dimenzionalnih podatkih, vendar
 
 \section{Kovariančne funkcije}
 Vloga kovariančne funkcije je pri modeliranju z Gaussovimi procesi zelo pomembna. Napovedane verjetnostne porazdelitve, ki nastopajo pri danih podatkih, so v glavnem odvisne od kovariančne funkcije in njenih hiperparametrov.
+Kovariančna funkcija $C(x_{i}, x_{j})$ izraža mero podobnosti med vhodoma $x_{i}$ in $x_{j}$. Za realne procese je navadno sestavljena iz dveh delov:
+\begin{equation}
+C(x_{i}, x_{j}) = C_{f}(x_{i}, x_{j}) + C_{n}(x_{i}, x_{j})
+\end{equation}
+
+Prvi, tj. funkcijski de $C_{f}(x_{i}, x_{j})$, opisuje lastnosti neznanega sistema, ki ga želimo modelirati, drugi, šumni del $C_{n}(x_{i}, x_{j})$ pa predstavlja varianco šuma. Pogosto predpostavljamo, da je šum naključen, kar pomeni, da ne pričakujemo korelacije med šumom in določenimi izhodi. Kovariančne funkcije delimo na stacionarne in nestacionarne. 
+
+\subsection{Stacionarne kovariančne funkcije}
+ 
+Stacionarne kovariančne funkcije $C_{f}(x_{i}, x_{j})$ so tiste, pri katerih je vrednost funkcije odvisna samo od relativne lege vhodnih vektorjev $x_{i}$ in $x_{j}$ oz. od njune medsebojne razdalje $ r= | x_{i} - x_{j} |$. 
+
+Najpreprostejša oblika kovariančne funkcije je konstantna kovariančna funkcija, ki zavazame isto vrednost na celotnem območju. Opišemo jo z izrazom
+\begin{equation}
+C_{f}(r) = \frac{1}{\theta_{1}^2}
+\end{equation}
+Določena je z enim hiperparametrom $\theta_{1}$, ki predstavlja skalirni faktor variance učnih podatkov.
+
+
 % slovar
 \section*{Slovar strokovnih izrazov}
 
